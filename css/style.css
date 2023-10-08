@@ -29,3 +29,8 @@ h2 {
     font-size: 24px; /* Tamaño de fuente de los encabezados */
     margin-top: 20px; /* Espacio superior */
 }
+
+.img-FlechaAbajo {
+    height: 30%;
+    width: auto;
+}
