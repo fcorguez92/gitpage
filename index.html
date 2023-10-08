@@ -14,10 +14,10 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo y nombre de la página -->
-            <a class="navbar-brand" href="#">GitPage</a>
+            <a class="navbar-brand" href="#Inicio">GitPage</a>
     
             <!-- Botón de hamburguesa para dispositivos móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,40 +34,204 @@
                         <a class="nav-link" href="#flujo-de-trabajo">Flujo de trabajo</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#addYcommit">add & commit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#enviodecambios">Envía cambios</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#ramas">Ramas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">F.A.Q.</a>
+                        <a class="nav-link" href="#actualizaYfusiona">Actualiza Y fusiona</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <!-- Sección de Configuración -->
-        <section id="configuracion">
-            <h2>Configuración</h2>
+    <div class="container-fluid bg-light">
+
+        <!-- Sección de Inicio-->
+        <section id="Inicio" class="bg-light text-center mt-4 pb-5">
+            <h1 class="">Git: una guía concisa</h1>
+            <h4 class="fw-normal pt-5 pb-3">Una guía concisa para atreverte con git. sin muchas complicaciones, solo algunas.</h4>
+            <div class="pb-5">Por: Francisco Rodriguez Román || Marcos Robador Mateos || Sidat Suárez García</div>
+
+            <img src="img/Felcha_Abajo.png" class="img-fluid img-FlechaAbajo" alt="...">
             <!-- Agrega aquí el contenido de la sección de Configuración -->
+        </section>
+
+        <!-- Sección de Configuración -->
+        <section id="configuracion" class="bg-info text-center pb-5">
+            <h3 class="pt-5">Configuración</h3>
+            <h4 class="fw-normal pt-5 pb-3">
+                <button class="badge bg-light">
+                    <a href="http://git-scm.com/download/" target="_blank">Descarga git para tu plataforma</a>
+                </button>
+            </h4>
+            <p class="fs-4 pt-3">Una vez descargado git. doble click y a todo que 'si' sin pensar.</p>
+            <p class="fs-4">Los problemas ya los arregalaras después</p>
         </section>
     
         <!-- Sección de Flujo de trabajo -->
-        <section id="flujo-de-trabajo">
-            <h2>Flujo de trabajo</h2>
+        <section id="flujo-de-trabajo" class="crea-repo text-center pb-5">
+            <h3 class="crea-repo pt-5">Flujo de trabajo</h3>
             <!-- Agrega aquí el contenido de la sección de Flujo de trabajo -->
+            <section class="crea-repo text-center pb-5">
+                <h2 class="crea-repo">Crea un repositorio nuevo</h2>
+                <p class="fs-4">Crea una carpeta nueva, ábrela y pulsa boton derecho.</p>
+                <p class="fs-4">Busca la opcion y clickea en:</p>
+                <button class="fs-4 badge bg-dark">
+                    -GIT BASH HERE
+                </button>
+                <p class="fs-4 pt-3">Se abrira la terminal de git.</p>
+                <p class="fs-4">Inicializa tu primer repositorio mediante el comando.</p>
+                <button class="fs-4 badge bg-dark ">
+                    -git init
+                </button>
+            </section>
+            
+            <section class="crea-repo text-center pb-5">
+                <h2 class="crea-repo pb-3">Clonar un repositorio</h2>
+                <p class="fs-4">Aqui creamos mediante comando una copia local del repositorio que queramos clonar.</p>
+                <button class="fs-4 badge bg-dark">
+                    -git clone /path/to/repository
+                </button>
+                <p class="fs-4 pt-3">Se abrira la terminal de git.</p>
+                <p class="fs-4">Inicializa tu primer repositorio mediante el comando</p>
+                <button class="fs-4 badge bg-dark ">
+                    -git init
+                </button>
+            </section>
+
+            <section class="ext-center pb-5">
+                <h2 class="text-white b-3">Los "arbolitos" de git.</h2>
+                <p class="fs-4">Tu repositorio local tiene tres "arbolitos" administrados por git.</p>
+                <p class="fs-4">El primero es tu <button class="text-negro fs-4 badge bg-light text-black">
+                    Carpeta del ordenador o Working directory</button> que tiene los archivos, el segundo es el <button class="text-negro fs-4 badge bg-light text-black">
+                    Index o Stagin Area</button> que es como un agujero negro, una paradoja espacio temporal, al más puro estilo de 'Interestelar',
+                    y el último es el <button class="text-negro fs-4 badge bg-light text-black">
+                    HEAD</button> donde quedan los commit registrados.</p>
+
+                    <img src="img/flujo_espaciotiempo.png" class="img-fluid img-FlechaAbajo" alt="...">
+            </section>
+        </section>
+
+        <!-- Sección de addYcommit-->
+        <section id="addYcommit" class="crea-add-commit text-center pb-5">
+            <h3 class="text-white pt-5">add & commit</h3>
+            <!-- Agrega aquí el contenido de la sección de Ramas -->
+            <section class="text-center pb-5">
+                <p class="fs-4">Para registrar cambios (añadirlos al stagin area) usamos:</p>
+                <button class="fs-4 badge bg-dark">
+                    -git add 'nombre del archivo'
+                </button>
+                <br>
+                <button class="fs-4 badge bg-dark mt-3">
+                    -git add .
+                </button>
+                <p class="fs-4 pt-3">Este es el primer paso, despues para hacer commit a estos usamos:</p>
+                <button class="fs-4 badge bg-dark ">
+                    -git commit -m "mensaje"
+                </button>
+                <p class="fs-4 pt-3">Ahora el archivo esta en el HEAD pero no en tu repositorio</p>
+            </section>
+        </section>
+
+        <!-- Sección de envios y cambios-->
+        <section id="enviodecambios" class="envio-cambios text-center pb-5">
+            <h3 class="text-body pt-5">Envío de cambios</h3>
+            <!-- Agrega aquí el contenido de la sección de envios y cambios-->
+            <section class="text-body text-center pb-5">
+                <p class="fs-4">Los cambios estan en el 'HEAD' de la copia local.</p>
+                <p class="fs-4">Para enviarlos usamos:</p>
+                <button class="fs-4 badge bg-dark">
+                    -git push origin master
+                </button>
+                <p class="fs-4 pt-3">Y asi tendremos todo en el repositorio en la 'nube'</p>
+            </section>
         </section>
     
         <!-- Sección de Ramas -->
-        <section id="ramas">
-            <h2>Ramas</h2>
+        <section id="ramas" class="bg-black text-center pb-5">
+            <h3 class="text-white pt-5">Ramas</h3>
             <!-- Agrega aquí el contenido de la sección de Ramas -->
+            <section class="text-white text-center">
+                <p class="fs-4">Las ramas se usan para desarrollar de fomra aislada unas de otras. Siendo la rama 'master' 
+                    o 'main' la ramas 'por defecto' cuando creamos un repositorio.</p>
+                <p class="fs-4">Para enviarlos usamos:</p>
+                <button class="fs-4 badge bg-light text-black">
+                    -git push origin master
+                </button>
+                <p class="fs-4 pt-3">Y asi tendremos todo en el repositorio en la 'nube'.</p>
+                <img src="img/git_branch_merge.png" class="img-fluid img-FlechaAbajo " alt="...">
+                <p class="fs-4">Creamos nuevas llamada 'la_ramita' ramas y hacemos checkout a ella usando:</p>
+                <button class="fs-4 badge bg-light text-black">
+                    -git checkout -b la_ramita
+                </button>
+                <p class="fs-4  pt-3">Volvemos a al principal usando:</p>
+                <button class="fs-4 badge bg-light text-black">
+                    -git checkout master o main
+                </button>
+                <p class="fs-4  pt-3">Y la borramos usando:</p>
+                <button class="fs-4 badge bg-light text-black">
+                    -git checkout -d la_ramita
+                </button>
+                <p class="fs-4  pt-3">Una rama no estara disponible para los demas a no ser que la subas a repositorio en la 'nube'.</p>
+                <button class="fs-4 badge bg-light text-black">
+                    -git push origin la_ramita
+                </button>
+
+            </section>
+        </section>
+
+        <!-- Sección de actualizaYfusiona -->
+        <section id="actualizaYfusiona" class="bg-light text-center pb-5">
+            <h3 class="pt-5">Actualiza Y fusiona</h3>
+            <!-- Agrega aquí el contenido de la sección de Ramas -->
+            <section class="text-center">
+                <p class="fs-4">Para actualizar nuestro repos. local al commit más nuevo, usamos:</p>
+                <button class="fs-4 badge bg-dark">
+                    -git pull
+                </button>
+                <p class="fs-4 pt-3">en nuestro directorio de trabajo o 'working directory' para bajar y 
+                    fusionar los cambios en el repos. remoto.</p>
+                <p class="fs-4 pt-3">Para fusionar otra rama a tu rama activa (la master por ejemplo), usamos:</p>
+                <button class="fs-4 badge bg-dark">
+                    -git merge master
+                </button>
+                <p class="fs-4 pt-3">Para ello nos aseguramos que estamos en la rama correcta, que seria en este 
+                    caso en la que queremos trabajar.</p>
+                <p class="fs-4  pt-3">En ambos csos de 'pull' y 'merge' git intenta fusionar automáticamente los cambios.
+                    No siempre sera posible y se produciran aquellas veces que no lo es, 'conflictos'. Nosotros somos los
+                    responsable de fusionar eso 'conflictos' manualmente al editar los archivos mostrados por git. Despés de ellos
+                    es necesario marcarlos como fusiionados con un 'add'.
+                </p>
+                <button class="fs-4 badge bg-dark">
+                    -git add 'nombre del archivo'
+                </button>
+                <p class="fs-4  pt-3">Antes de fusionar los cambios se pueden revisar usando:</p>
+                <button class="fs-4 badge bg-dark">
+                    -git diff 'rama fuente' 'rama objetivo'
+                </button>
+            </section>
         </section>
     
-        <!-- Sección de F.A.Q. -->
-        <section id="faq">
-            <h2>F.A.Q.</h2>
-            <!-- Agrega aquí el contenido de la sección de F.A.Q. -->
-        </section>
     </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Características</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Acerca</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2023 GitPage ---- Francisco Rodriguez Román, Sidat Suárez García, Marcos Robador Mateos
+
+          </p>
+        </footer>
+      </div>
 </body>
 </html>

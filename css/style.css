@@ -29,3 +29,26 @@ h2 {
     font-size: 24px; /* Tamaño de fuente de los encabezados */
     margin-top: 20px; /* Espacio superior */
 }
+
+.img-FlechaAbajo {
+    height: 45%;
+    width: auto;
+}
+
+.crea-repo {
+    background-color: #0056b3;
+    color: #f7f7f7;
+}
+
+.crea-add-commit {
+    background-color: #9f0a0a;
+}
+
+.envio-cambios {
+    background-color: #f3cd4f;
+}
+
+.texto-negro {
+    color:rgb(7, 7, 7);
+}
+
