@@ -31,7 +31,7 @@ h2 {
 }
 
 .img-FlechaAbajo {
-    height: 30%;
+    height: 45%;
     width: auto;
 }
 
@@ -39,3 +39,16 @@ h2 {
     background-color: #0056b3;
     color: #f7f7f7;
 }
+
+.crea-add-commit {
+    background-color: #9f0a0a;
+}
+
+.envio-cambios {
+    background-color: #f3cd4f;
+}
+
+.texto-negro {
+    color:rgb(7, 7, 7);
+}
+
