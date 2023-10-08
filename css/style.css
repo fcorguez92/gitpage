@@ -1,10 +1,10 @@
 /* Estilo para la barra de navegación */
-.navbar {
-    background-color: #343a40; /* Color de fondo */
-}
+
 
 .navbar-brand {
-    font-size: 24px; /* Tamaño de fuente del logo */
+    font-size: 28px; /* Tamaño de fuente del logo */
+    font-weight: bold; /* Negrita */
+    color: rgb(194, 255, 250); /* Color de texto del logo */
 }
 
 .navbar-toggler-icon {
@@ -13,7 +13,14 @@
 
 .navbar-nav .nav-link {
     color: #fff; /* Color de texto de los enlaces */
-    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    font-size: 16px; /* Tamaño de fuente de los enlaces */
+    padding: 10px 20px; /* Espaciado interno de los enlaces */
+    transition: background-color 0.3s; /* Transición al pasar el mouse */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    border-radius: 5px; /* Borde redondeado al pasar el mouse */
 }
 
 /* Estilo para los encabezados de sección */
