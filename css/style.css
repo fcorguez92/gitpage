@@ -7,9 +7,7 @@
     color: rgb(194, 255, 250); /* Color de texto del logo */
 }
 
-.navbar-toggler-icon {
-    background-color: rgb(194, 255, 250); /* Color del icono del botón de hamburguesa */
-}
+
 
 .navbar-nav .nav-link {
     color: #fff; /* Color de texto de los enlaces */
